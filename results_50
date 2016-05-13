@@ -1,0 +1,1308 @@
+:compileJava UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:compileTestJava UP-TO-DATE
+:processTestResources UP-TO-DATE
+:testClasses UP-TO-DATE
+:compileJmhJava
+:processJmhResources UP-TO-DATE
+:jmhClasses
+:jmhRunBytecodeGenerator
+Processing 13 classes from /Users/waller/test/AHHHH/build/classes/jmh with "reflection" generator
+Writing out Java source to /Users/waller/test/AHHHH/build/jmh-generated-sources and resources to /Users/waller/test/AHHHH/build/jmh-generated-classes
+:jmhCompileGeneratedClasses
+:jmhJar
+:jmh
+# JMH 1.11.3 (released 111 days ago, please consider updating!)
+# VM version: JDK 1.8.0_20-ea, VM 25.20-b17
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wallerlab.yoink.SetOfBenchmarks.functional
+
+# Run progress: 0.00% complete, ETA 00:26:40
+# Fork: 1 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+9946.427 ops/s
+# Warmup Iteration   2: 11040.826 ops/s
+# Warmup Iteration   3: 11486.950 ops/s
+# Warmup Iteration   4: 13003.394 ops/s
+# Warmup Iteration   5: 13033.801 ops/s
+# Warmup Iteration   6: 12989.760 ops/s
+# Warmup Iteration   7: 13056.863 ops/s
+# Warmup Iteration   8: 12992.398 ops/s
+# Warmup Iteration   9: 12829.126 ops/s
+# Warmup Iteration  10: 12930.916 ops/s
+# Warmup Iteration  11: 12904.368 ops/s
+# Warmup Iteration  12: 13013.151 ops/s
+# Warmup Iteration  13: 12937.442 ops/s
+# Warmup Iteration  14: 12748.658 ops/s
+# Warmup Iteration  15: 12836.154 ops/s
+# Warmup Iteration  16: 12857.229 ops/s
+# Warmup Iteration  17: 12856.766 ops/s
+# Warmup Iteration  18: 12825.653 ops/s
+# Warmup Iteration  19: 12791.719 ops/s
+# Warmup Iteration  20: 12746.191 ops/s
+Iteration   1: 12708.298 ops/s
+Iteration   2: 12856.478 ops/s
+Iteration   3: 12823.332 ops/s
+Iteration   4: 12821.804 ops/s
+Iteration   5: 12860.199 ops/s
+Iteration   6: 11370.687 ops/s
+Iteration   7: 12748.624 ops/s
+Iteration   8: 12739.952 ops/s
+Iteration   9: 12806.435 ops/s
+Iteration  10: 12861.743 ops/s
+Iteration  11: 12789.336 ops/s
+Iteration  12: 12829.187 ops/s
+Iteration  13: 12809.848 ops/s
+Iteration  14: 12785.764 ops/s
+Iteration  15: 12834.560 ops/s
+Iteration  16: 12812.987 ops/s
+Iteration  17: 12810.093 ops/s
+Iteration  18: 12857.065 ops/s
+Iteration  19: 12784.220 ops/s
+Iteration  20: 12628.861 ops/s
+
+# Run progress: 2.50% complete, ETA 00:26:15
+# Fork: 2 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+10674.592 ops/s
+# Warmup Iteration   2: 12038.556 ops/s
+# Warmup Iteration   3: 13019.990 ops/s
+# Warmup Iteration   4: 12975.563 ops/s
+# Warmup Iteration   5: 12957.719 ops/s
+# Warmup Iteration   6: 12965.089 ops/s
+# Warmup Iteration   7: 13015.544 ops/s
+# Warmup Iteration   8: 12949.284 ops/s
+# Warmup Iteration   9: 12814.715 ops/s
+# Warmup Iteration  10: 12861.416 ops/s
+# Warmup Iteration  11: 12851.963 ops/s
+# Warmup Iteration  12: 12921.430 ops/s
+# Warmup Iteration  13: 12864.193 ops/s
+# Warmup Iteration  14: 12903.484 ops/s
+# Warmup Iteration  15: 12903.986 ops/s
+# Warmup Iteration  16: 12843.851 ops/s
+# Warmup Iteration  17: 12879.615 ops/s
+# Warmup Iteration  18: 12855.894 ops/s
+# Warmup Iteration  19: 12876.818 ops/s
+# Warmup Iteration  20: 12897.636 ops/s
+Iteration   1: 12813.745 ops/s
+Iteration   2: 12864.772 ops/s
+Iteration   3: 12844.453 ops/s
+Iteration   4: 12832.978 ops/s
+Iteration   5: 12823.693 ops/s
+Iteration   6: 12807.468 ops/s
+Iteration   7: 12882.648 ops/s
+Iteration   8: 12828.627 ops/s
+Iteration   9: 12823.169 ops/s
+Iteration  10: 12717.594 ops/s
+Iteration  11: 12772.071 ops/s
+Iteration  12: 12853.109 ops/s
+Iteration  13: 12847.765 ops/s
+Iteration  14: 12837.943 ops/s
+Iteration  15: 12905.865 ops/s
+Iteration  16: 12834.360 ops/s
+Iteration  17: 12800.976 ops/s
+Iteration  18: 12771.036 ops/s
+Iteration  19: 12804.277 ops/s
+Iteration  20: 12764.532 ops/s
+
+# Run progress: 5.00% complete, ETA 00:25:33
+# Fork: 3 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+10603.201 ops/s
+# Warmup Iteration   2: 11675.494 ops/s
+# Warmup Iteration   3: 12650.509 ops/s
+# Warmup Iteration   4: 12706.321 ops/s
+# Warmup Iteration   5: 11743.952 ops/s
+# Warmup Iteration   6: 11779.005 ops/s
+# Warmup Iteration   7: 12645.934 ops/s
+# Warmup Iteration   8: 12697.945 ops/s
+# Warmup Iteration   9: 12398.967 ops/s
+# Warmup Iteration  10: 12637.882 ops/s
+# Warmup Iteration  11: 12328.163 ops/s
+# Warmup Iteration  12: 12401.498 ops/s
+# Warmup Iteration  13: 12408.380 ops/s
+# Warmup Iteration  14: 12322.205 ops/s
+# Warmup Iteration  15: 12379.248 ops/s
+# Warmup Iteration  16: 12379.927 ops/s
+# Warmup Iteration  17: 12829.542 ops/s
+# Warmup Iteration  18: 12793.643 ops/s
+# Warmup Iteration  19: 12686.536 ops/s
+# Warmup Iteration  20: 12670.468 ops/s
+Iteration   1: 12757.892 ops/s
+Iteration   2: 12806.016 ops/s
+Iteration   3: 12772.157 ops/s
+Iteration   4: 12824.154 ops/s
+Iteration   5: 12793.395 ops/s
+Iteration   6: 12800.819 ops/s
+Iteration   7: 12797.538 ops/s
+Iteration   8: 12728.848 ops/s
+Iteration   9: 12805.253 ops/s
+Iteration  10: 12799.334 ops/s
+Iteration  11: 12818.371 ops/s
+Iteration  12: 12828.697 ops/s
+Iteration  13: 12818.151 ops/s
+Iteration  14: 12843.743 ops/s
+Iteration  15: 12802.859 ops/s
+Iteration  16: 12804.030 ops/s
+Iteration  17: 12835.246 ops/s
+Iteration  18: 12793.328 ops/s
+Iteration  19: 11902.846 ops/s
+Iteration  20: 11771.837 ops/s
+
+# Run progress: 7.50% complete, ETA 00:24:52
+# Fork: 4 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+15595.855 ops/s
+# Warmup Iteration   2: 18453.942 ops/s
+# Warmup Iteration   3: 20882.264 ops/s
+# Warmup Iteration   4: 20826.584 ops/s
+# Warmup Iteration   5: 20771.330 ops/s
+# Warmup Iteration   6: 20707.458 ops/s
+# Warmup Iteration   7: 20705.391 ops/s
+# Warmup Iteration   8: 20628.575 ops/s
+# Warmup Iteration   9: 20393.992 ops/s
+# Warmup Iteration  10: 20317.994 ops/s
+# Warmup Iteration  11: 20489.378 ops/s
+# Warmup Iteration  12: 20501.633 ops/s
+# Warmup Iteration  13: 20461.255 ops/s
+# Warmup Iteration  14: 20558.998 ops/s
+# Warmup Iteration  15: 20543.036 ops/s
+# Warmup Iteration  16: 20616.544 ops/s
+# Warmup Iteration  17: 20490.423 ops/s
+# Warmup Iteration  18: 20379.295 ops/s
+# Warmup Iteration  19: 20442.775 ops/s
+# Warmup Iteration  20: 20286.096 ops/s
+Iteration   1: 20472.360 ops/s
+Iteration   2: 20372.540 ops/s
+Iteration   3: 20472.652 ops/s
+Iteration   4: 20456.520 ops/s
+Iteration   5: 18268.084 ops/s
+Iteration   6: 20398.210 ops/s
+Iteration   7: 20366.723 ops/s
+Iteration   8: 20573.943 ops/s
+Iteration   9: 20602.570 ops/s
+Iteration  10: 20391.845 ops/s
+Iteration  11: 20471.395 ops/s
+Iteration  12: 20575.656 ops/s
+Iteration  13: 20458.448 ops/s
+Iteration  14: 20567.116 ops/s
+Iteration  15: 20515.253 ops/s
+Iteration  16: 20547.044 ops/s
+Iteration  17: 20575.538 ops/s
+Iteration  18: 20487.912 ops/s
+Iteration  19: 20471.111 ops/s
+Iteration  20: 20058.184 ops/s
+
+# Run progress: 10.00% complete, ETA 00:24:12
+# Fork: 5 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+15415.966 ops/s
+# Warmup Iteration   2: 18529.675 ops/s
+# Warmup Iteration   3: 20911.301 ops/s
+# Warmup Iteration   4: 20878.112 ops/s
+# Warmup Iteration   5: 20951.958 ops/s
+# Warmup Iteration   6: 20639.341 ops/s
+# Warmup Iteration   7: 20597.309 ops/s
+# Warmup Iteration   8: 20678.535 ops/s
+# Warmup Iteration   9: 20542.239 ops/s
+# Warmup Iteration  10: 20431.893 ops/s
+# Warmup Iteration  11: 20511.202 ops/s
+# Warmup Iteration  12: 20585.336 ops/s
+# Warmup Iteration  13: 20626.740 ops/s
+# Warmup Iteration  14: 20628.304 ops/s
+# Warmup Iteration  15: 20535.257 ops/s
+# Warmup Iteration  16: 20605.133 ops/s
+# Warmup Iteration  17: 20441.216 ops/s
+# Warmup Iteration  18: 20635.371 ops/s
+# Warmup Iteration  19: 20550.824 ops/s
+# Warmup Iteration  20: 20586.628 ops/s
+Iteration   1: 20200.154 ops/s
+Iteration   2: 19581.473 ops/s
+Iteration   3: 20424.455 ops/s
+Iteration   4: 20620.990 ops/s
+Iteration   5: 20660.321 ops/s
+Iteration   6: 20599.627 ops/s
+Iteration   7: 20489.305 ops/s
+Iteration   8: 20598.648 ops/s
+Iteration   9: 20315.989 ops/s
+Iteration  10: 20448.172 ops/s
+Iteration  11: 20432.343 ops/s
+Iteration  12: 20647.847 ops/s
+Iteration  13: 20600.228 ops/s
+Iteration  14: 20619.173 ops/s
+Iteration  15: 20514.401 ops/s
+Iteration  16: 20463.332 ops/s
+Iteration  17: 20653.420 ops/s
+Iteration  18: 20695.063 ops/s
+Iteration  19: 20372.020 ops/s
+Iteration  20: 20454.211 ops/s
+
+# Run progress: 12.50% complete, ETA 00:23:32
+# Fork: 6 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+10667.451 ops/s
+# Warmup Iteration   2: 11884.890 ops/s
+# Warmup Iteration   3: 12984.847 ops/s
+# Warmup Iteration   4: 12050.342 ops/s
+# Warmup Iteration   5: 12183.905 ops/s
+# Warmup Iteration   6: 12700.812 ops/s
+# Warmup Iteration   7: 12470.972 ops/s
+# Warmup Iteration   8: 12481.155 ops/s
+# Warmup Iteration   9: 12383.867 ops/s
+# Warmup Iteration  10: 12469.985 ops/s
+# Warmup Iteration  11: 12528.032 ops/s
+# Warmup Iteration  12: 12494.609 ops/s
+# Warmup Iteration  13: 12476.050 ops/s
+# Warmup Iteration  14: 12476.369 ops/s
+# Warmup Iteration  15: 12478.013 ops/s
+# Warmup Iteration  16: 12479.111 ops/s
+# Warmup Iteration  17: 12821.564 ops/s
+# Warmup Iteration  18: 12870.178 ops/s
+# Warmup Iteration  19: 12638.023 ops/s
+# Warmup Iteration  20: 12704.540 ops/s
+Iteration   1: 12800.893 ops/s
+Iteration   2: 12799.445 ops/s
+Iteration   3: 12762.030 ops/s
+Iteration   4: 12854.126 ops/s
+Iteration   5: 12810.768 ops/s
+Iteration   6: 12830.347 ops/s
+Iteration   7: 12881.899 ops/s
+Iteration   8: 12848.145 ops/s
+Iteration   9: 12862.052 ops/s
+Iteration  10: 12815.879 ops/s
+Iteration  11: 12796.203 ops/s
+Iteration  12: 12775.134 ops/s
+Iteration  13: 12782.533 ops/s
+Iteration  14: 12851.447 ops/s
+Iteration  15: 12817.000 ops/s
+Iteration  16: 12817.185 ops/s
+Iteration  17: 12860.413 ops/s
+Iteration  18: 12826.247 ops/s
+Iteration  19: 12773.959 ops/s
+Iteration  20: 12831.306 ops/s
+
+# Run progress: 15.00% complete, ETA 00:22:51
+# Fork: 7 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+15562.358 ops/s
+# Warmup Iteration   2: 18416.884 ops/s
+# Warmup Iteration   3: 20852.437 ops/s
+# Warmup Iteration   4: 20539.030 ops/s
+# Warmup Iteration   5: 20655.442 ops/s
+# Warmup Iteration   6: 20452.818 ops/s
+# Warmup Iteration   7: 20510.711 ops/s
+# Warmup Iteration   8: 20460.959 ops/s
+# Warmup Iteration   9: 20301.428 ops/s
+# Warmup Iteration  10: 20238.378 ops/s
+# Warmup Iteration  11: 20427.227 ops/s
+# Warmup Iteration  12: 20342.526 ops/s
+# Warmup Iteration  13: 20437.056 ops/s
+# Warmup Iteration  14: 20575.460 ops/s
+# Warmup Iteration  15: 20426.992 ops/s
+# Warmup Iteration  16: 20439.129 ops/s
+# Warmup Iteration  17: 20439.238 ops/s
+# Warmup Iteration  18: 20430.507 ops/s
+# Warmup Iteration  19: 20466.871 ops/s
+# Warmup Iteration  20: 20483.222 ops/s
+Iteration   1: 20406.701 ops/s
+Iteration   2: 20423.718 ops/s
+Iteration   3: 20312.867 ops/s
+Iteration   4: 18016.348 ops/s
+Iteration   5: 20322.407 ops/s
+Iteration   6: 20469.518 ops/s
+Iteration   7: 20381.462 ops/s
+Iteration   8: 20409.616 ops/s
+Iteration   9: 20491.950 ops/s
+Iteration  10: 20441.360 ops/s
+Iteration  11: 20413.036 ops/s
+Iteration  12: 20389.577 ops/s
+Iteration  13: 20423.410 ops/s
+Iteration  14: 20455.108 ops/s
+Iteration  15: 20435.508 ops/s
+Iteration  16: 20471.332 ops/s
+Iteration  17: 20450.185 ops/s
+Iteration  18: 20406.893 ops/s
+Iteration  19: 20380.753 ops/s
+Iteration  20: 20218.791 ops/s
+
+# Run progress: 17.50% complete, ETA 00:22:11
+# Fork: 8 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+10682.276 ops/s
+# Warmup Iteration   2: 11945.431 ops/s
+# Warmup Iteration   3: 13022.218 ops/s
+# Warmup Iteration   4: 12959.181 ops/s
+# Warmup Iteration   5: 12930.531 ops/s
+# Warmup Iteration   6: 12908.230 ops/s
+# Warmup Iteration   7: 12940.420 ops/s
+# Warmup Iteration   8: 12838.934 ops/s
+# Warmup Iteration   9: 12796.609 ops/s
+# Warmup Iteration  10: 12863.621 ops/s
+# Warmup Iteration  11: 12812.188 ops/s
+# Warmup Iteration  12: 12797.351 ops/s
+# Warmup Iteration  13: 12810.175 ops/s
+# Warmup Iteration  14: 12768.642 ops/s
+# Warmup Iteration  15: 12790.267 ops/s
+# Warmup Iteration  16: 12766.552 ops/s
+# Warmup Iteration  17: 12750.645 ops/s
+# Warmup Iteration  18: 12897.648 ops/s
+# Warmup Iteration  19: 12846.039 ops/s
+# Warmup Iteration  20: 12898.508 ops/s
+Iteration   1: 12904.621 ops/s
+Iteration   2: 12893.581 ops/s
+Iteration   3: 12939.389 ops/s
+Iteration   4: 12846.756 ops/s
+Iteration   5: 12879.210 ops/s
+Iteration   6: 12730.605 ops/s
+Iteration   7: 12886.081 ops/s
+Iteration   8: 12881.555 ops/s
+Iteration   9: 12730.389 ops/s
+Iteration  10: 12747.312 ops/s
+Iteration  11: 12760.447 ops/s
+Iteration  12: 12883.274 ops/s
+Iteration  13: 12813.783 ops/s
+Iteration  14: 12877.292 ops/s
+Iteration  15: 12884.359 ops/s
+Iteration  16: 12884.973 ops/s
+Iteration  17: 12876.356 ops/s
+Iteration  18: 12877.152 ops/s
+Iteration  19: 12822.245 ops/s
+Iteration  20: 12881.971 ops/s
+
+# Run progress: 20.00% complete, ETA 00:21:30
+# Fork: 9 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+15128.974 ops/s
+# Warmup Iteration   2: 18368.287 ops/s
+# Warmup Iteration   3: 18933.487 ops/s
+# Warmup Iteration   4: 20040.980 ops/s
+# Warmup Iteration   5: 20666.730 ops/s
+# Warmup Iteration   6: 20547.381 ops/s
+# Warmup Iteration   7: 20587.625 ops/s
+# Warmup Iteration   8: 20459.119 ops/s
+# Warmup Iteration   9: 20363.698 ops/s
+# Warmup Iteration  10: 20317.307 ops/s
+# Warmup Iteration  11: 20454.312 ops/s
+# Warmup Iteration  12: 20373.492 ops/s
+# Warmup Iteration  13: 20309.083 ops/s
+# Warmup Iteration  14: 20415.256 ops/s
+# Warmup Iteration  15: 20375.460 ops/s
+# Warmup Iteration  16: 20377.581 ops/s
+# Warmup Iteration  17: 20239.029 ops/s
+# Warmup Iteration  18: 20365.998 ops/s
+# Warmup Iteration  19: 20163.852 ops/s
+# Warmup Iteration  20: 20310.067 ops/s
+Iteration   1: 20211.826 ops/s
+Iteration   2: 20375.200 ops/s
+Iteration   3: 20377.747 ops/s
+Iteration   4: 20344.744 ops/s
+Iteration   5: 20445.799 ops/s
+Iteration   6: 20336.775 ops/s
+Iteration   7: 20301.449 ops/s
+Iteration   8: 20386.830 ops/s
+Iteration   9: 20412.998 ops/s
+Iteration  10: 20434.691 ops/s
+Iteration  11: 20418.037 ops/s
+Iteration  12: 20414.478 ops/s
+Iteration  13: 20417.295 ops/s
+Iteration  14: 20380.122 ops/s
+Iteration  15: 20487.451 ops/s
+Iteration  16: 20389.977 ops/s
+Iteration  17: 20495.976 ops/s
+Iteration  18: 17320.262 ops/s
+Iteration  19: 20438.154 ops/s
+Iteration  20: 20402.228 ops/s
+
+# Run progress: 22.50% complete, ETA 00:20:50
+# Fork: 10 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+10825.932 ops/s
+# Warmup Iteration   2: 12242.966 ops/s
+# Warmup Iteration   3: 13156.901 ops/s
+# Warmup Iteration   4: 13249.660 ops/s
+# Warmup Iteration   5: 13226.950 ops/s
+# Warmup Iteration   6: 13203.501 ops/s
+# Warmup Iteration   7: 13236.264 ops/s
+# Warmup Iteration   8: 13162.347 ops/s
+# Warmup Iteration   9: 13005.621 ops/s
+# Warmup Iteration  10: 13006.448 ops/s
+# Warmup Iteration  11: 13068.310 ops/s
+# Warmup Iteration  12: 13090.189 ops/s
+# Warmup Iteration  13: 13040.113 ops/s
+# Warmup Iteration  14: 13100.445 ops/s
+# Warmup Iteration  15: 13073.022 ops/s
+# Warmup Iteration  16: 13108.020 ops/s
+# Warmup Iteration  17: 12730.073 ops/s
+# Warmup Iteration  18: 12756.241 ops/s
+# Warmup Iteration  19: 12741.606 ops/s
+# Warmup Iteration  20: 12745.471 ops/s
+Iteration   1: 12702.863 ops/s
+Iteration   2: 12767.802 ops/s
+Iteration   3: 11400.187 ops/s
+Iteration   4: 12697.978 ops/s
+Iteration   5: 12727.219 ops/s
+Iteration   6: 12718.652 ops/s
+Iteration   7: 12695.595 ops/s
+Iteration   8: 12701.497 ops/s
+Iteration   9: 12685.316 ops/s
+Iteration  10: 12727.607 ops/s
+Iteration  11: 12734.717 ops/s
+Iteration  12: 12762.487 ops/s
+Iteration  13: 12748.753 ops/s
+Iteration  14: 12730.723 ops/s
+Iteration  15: 12749.018 ops/s
+Iteration  16: 12710.673 ops/s
+Iteration  17: 12756.354 ops/s
+Iteration  18: 12776.467 ops/s
+Iteration  19: 12685.259 ops/s
+Iteration  20: 12560.903 ops/s
+
+
+Result "functional":
+  15792.602 ±(99.9%) 882.995 ops/s [Average]
+  (min, avg, max) = (11370.687, 15792.602, 20695.063), stdev = 3738.657
+  CI (99.9%): [14909.606, 16675.597] (assumes normal distribution)
+
+
+# JMH 1.11.3 (released 111 days ago, please consider updating!)
+# VM version: JDK 1.8.0_20-ea, VM 25.20-b17
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wallerlab.yoink.SetOfBenchmarks.functionalParallel
+
+# Run progress: 25.00% complete, ETA 00:20:10
+# Fork: 1 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+18217.776 ops/s
+# Warmup Iteration   2: 26008.386 ops/s
+# Warmup Iteration   3: 26850.703 ops/s
+# Warmup Iteration   4: 27259.922 ops/s
+# Warmup Iteration   5: 27170.832 ops/s
+# Warmup Iteration   6: 26854.867 ops/s
+# Warmup Iteration   7: 26667.995 ops/s
+# Warmup Iteration   8: 26868.503 ops/s
+# Warmup Iteration   9: 27106.352 ops/s
+# Warmup Iteration  10: 26909.996 ops/s
+# Warmup Iteration  11: 27078.860 ops/s
+# Warmup Iteration  12: 27185.144 ops/s
+# Warmup Iteration  13: 26848.190 ops/s
+# Warmup Iteration  14: 27126.455 ops/s
+# Warmup Iteration  15: 26856.744 ops/s
+# Warmup Iteration  16: 27032.884 ops/s
+# Warmup Iteration  17: 27031.183 ops/s
+# Warmup Iteration  18: 26825.549 ops/s
+# Warmup Iteration  19: 27059.284 ops/s
+# Warmup Iteration  20: 26974.186 ops/s
+Iteration   1: 26746.776 ops/s
+Iteration   2: 27015.654 ops/s
+Iteration   3: 26965.097 ops/s
+Iteration   4: 26898.939 ops/s
+Iteration   5: 27034.032 ops/s
+Iteration   6: 27024.885 ops/s
+Iteration   7: 27022.976 ops/s
+Iteration   8: 26998.669 ops/s
+Iteration   9: 25761.860 ops/s
+Iteration  10: 26671.068 ops/s
+Iteration  11: 26495.413 ops/s
+Iteration  12: 26904.071 ops/s
+Iteration  13: 26811.790 ops/s
+Iteration  14: 27136.599 ops/s
+Iteration  15: 26939.070 ops/s
+Iteration  16: 26896.123 ops/s
+Iteration  17: 27109.203 ops/s
+Iteration  18: 26934.321 ops/s
+Iteration  19: 27071.463 ops/s
+Iteration  20: 26816.822 ops/s
+
+# Run progress: 27.50% complete, ETA 00:19:30
+# Fork: 2 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+18584.723 ops/s
+# Warmup Iteration   2: 21864.820 ops/s
+# Warmup Iteration   3: 26532.325 ops/s
+# Warmup Iteration   4: 27231.134 ops/s
+# Warmup Iteration   5: 27030.324 ops/s
+# Warmup Iteration   6: 26921.145 ops/s
+# Warmup Iteration   7: 27027.076 ops/s
+# Warmup Iteration   8: 26793.226 ops/s
+# Warmup Iteration   9: 27163.659 ops/s
+# Warmup Iteration  10: 26842.557 ops/s
+# Warmup Iteration  11: 27063.341 ops/s
+# Warmup Iteration  12: 27107.884 ops/s
+# Warmup Iteration  13: 26974.505 ops/s
+# Warmup Iteration  14: 27140.396 ops/s
+# Warmup Iteration  15: 27037.333 ops/s
+# Warmup Iteration  16: 26908.016 ops/s
+# Warmup Iteration  17: 27111.984 ops/s
+# Warmup Iteration  18: 26996.513 ops/s
+# Warmup Iteration  19: 25876.015 ops/s
+# Warmup Iteration  20: 26716.569 ops/s
+Iteration   1: 26496.393 ops/s
+Iteration   2: 27096.421 ops/s
+Iteration   3: 26846.427 ops/s
+Iteration   4: 26966.801 ops/s
+Iteration   5: 27078.971 ops/s
+Iteration   6: 26825.924 ops/s
+Iteration   7: 27063.356 ops/s
+Iteration   8: 26871.814 ops/s
+Iteration   9: 27003.863 ops/s
+Iteration  10: 26932.245 ops/s
+Iteration  11: 26946.970 ops/s
+Iteration  12: 27025.751 ops/s
+Iteration  13: 26971.617 ops/s
+Iteration  14: 27046.330 ops/s
+Iteration  15: 26893.290 ops/s
+Iteration  16: 27111.888 ops/s
+Iteration  17: 26994.196 ops/s
+Iteration  18: 18678.702 ops/s
+Iteration  19: 24383.458 ops/s
+Iteration  20: 26846.163 ops/s
+
+# Run progress: 30.00% complete, ETA 00:18:49
+# Fork: 3 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+18543.316 ops/s
+# Warmup Iteration   2: 26437.865 ops/s
+# Warmup Iteration   3: 27448.843 ops/s
+# Warmup Iteration   4: 27474.989 ops/s
+# Warmup Iteration   5: 27500.409 ops/s
+# Warmup Iteration   6: 27436.174 ops/s
+# Warmup Iteration   7: 27416.059 ops/s
+# Warmup Iteration   8: 27424.111 ops/s
+# Warmup Iteration   9: 26555.573 ops/s
+# Warmup Iteration  10: 26788.984 ops/s
+# Warmup Iteration  11: 27083.881 ops/s
+# Warmup Iteration  12: 27190.577 ops/s
+# Warmup Iteration  13: 27315.918 ops/s
+# Warmup Iteration  14: 27488.519 ops/s
+# Warmup Iteration  15: 27267.668 ops/s
+# Warmup Iteration  16: 27309.668 ops/s
+# Warmup Iteration  17: 27431.519 ops/s
+# Warmup Iteration  18: 27294.443 ops/s
+# Warmup Iteration  19: 27577.040 ops/s
+# Warmup Iteration  20: 27045.728 ops/s
+Iteration   1: 27436.905 ops/s
+Iteration   2: 22863.172 ops/s
+Iteration   3: 27329.546 ops/s
+Iteration   4: 27157.510 ops/s
+Iteration   5: 27236.490 ops/s
+Iteration   6: 27489.287 ops/s
+Iteration   7: 27467.444 ops/s
+Iteration   8: 27225.309 ops/s
+Iteration   9: 27470.143 ops/s
+Iteration  10: 27366.135 ops/s
+Iteration  11: 27504.441 ops/s
+Iteration  12: 27384.121 ops/s
+Iteration  13: 27433.926 ops/s
+Iteration  14: 27465.120 ops/s
+Iteration  15: 27254.738 ops/s
+Iteration  16: 27504.563 ops/s
+Iteration  17: 27452.550 ops/s
+Iteration  18: 27438.845 ops/s
+Iteration  19: 27222.004 ops/s
+Iteration  20: 26026.509 ops/s
+
+# Run progress: 32.50% complete, ETA 00:18:09
+# Fork: 4 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+18310.314 ops/s
+# Warmup Iteration   2: 25900.915 ops/s
+# Warmup Iteration   3: 27028.799 ops/s
+# Warmup Iteration   4: 27312.767 ops/s
+# Warmup Iteration   5: 27195.663 ops/s
+# Warmup Iteration   6: 26921.054 ops/s
+# Warmup Iteration   7: 26509.170 ops/s
+# Warmup Iteration   8: 27037.335 ops/s
+# Warmup Iteration   9: 26997.339 ops/s
+# Warmup Iteration  10: 27218.984 ops/s
+# Warmup Iteration  11: 26922.508 ops/s
+# Warmup Iteration  12: 27082.418 ops/s
+# Warmup Iteration  13: 27142.919 ops/s
+# Warmup Iteration  14: 27043.072 ops/s
+# Warmup Iteration  15: 27251.232 ops/s
+# Warmup Iteration  16: 27032.802 ops/s
+# Warmup Iteration  17: 27180.723 ops/s
+# Warmup Iteration  18: 27218.153 ops/s
+# Warmup Iteration  19: 26970.891 ops/s
+# Warmup Iteration  20: 27308.262 ops/s
+Iteration   1: 27077.503 ops/s
+Iteration   2: 27168.242 ops/s
+Iteration   3: 26814.551 ops/s
+Iteration   4: 27159.729 ops/s
+Iteration   5: 27131.617 ops/s
+Iteration   6: 27127.367 ops/s
+Iteration   7: 27036.186 ops/s
+Iteration   8: 27031.014 ops/s
+Iteration   9: 26363.087 ops/s
+Iteration  10: 26770.209 ops/s
+Iteration  11: 26340.150 ops/s
+Iteration  12: 27236.432 ops/s
+Iteration  13: 27072.784 ops/s
+Iteration  14: 27018.969 ops/s
+Iteration  15: 26919.239 ops/s
+Iteration  16: 26978.804 ops/s
+Iteration  17: 27182.068 ops/s
+Iteration  18: 26970.077 ops/s
+Iteration  19: 27234.607 ops/s
+Iteration  20: 26992.388 ops/s
+
+# Run progress: 35.00% complete, ETA 00:17:28
+# Fork: 5 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+17122.748 ops/s
+# Warmup Iteration   2: 22215.925 ops/s
+# Warmup Iteration   3: 27644.003 ops/s
+# Warmup Iteration   4: 27842.168 ops/s
+# Warmup Iteration   5: 27422.329 ops/s
+# Warmup Iteration   6: 27558.346 ops/s
+# Warmup Iteration   7: 27417.541 ops/s
+# Warmup Iteration   8: 27518.254 ops/s
+# Warmup Iteration   9: 26736.751 ops/s
+# Warmup Iteration  10: 27378.050 ops/s
+# Warmup Iteration  11: 27454.047 ops/s
+# Warmup Iteration  12: 27500.469 ops/s
+# Warmup Iteration  13: 27156.141 ops/s
+# Warmup Iteration  14: 27543.356 ops/s
+# Warmup Iteration  15: 27492.691 ops/s
+# Warmup Iteration  16: 27403.324 ops/s
+# Warmup Iteration  17: 27455.514 ops/s
+# Warmup Iteration  18: 27479.606 ops/s
+# Warmup Iteration  19: 26325.420 ops/s
+# Warmup Iteration  20: 27123.124 ops/s
+Iteration   1: 27083.830 ops/s
+Iteration   2: 24871.969 ops/s
+Iteration   3: 27361.900 ops/s
+Iteration   4: 27393.256 ops/s
+Iteration   5: 27575.782 ops/s
+Iteration   6: 27453.743 ops/s
+Iteration   7: 27630.911 ops/s
+Iteration   8: 27305.964 ops/s
+Iteration   9: 27386.301 ops/s
+Iteration  10: 27649.641 ops/s
+Iteration  11: 27368.397 ops/s
+Iteration  12: 27516.086 ops/s
+Iteration  13: 27555.597 ops/s
+Iteration  14: 27428.949 ops/s
+Iteration  15: 27647.739 ops/s
+Iteration  16: 27486.863 ops/s
+Iteration  17: 27453.710 ops/s
+Iteration  18: 27655.320 ops/s
+Iteration  19: 27294.054 ops/s
+Iteration  20: 27564.120 ops/s
+
+# Run progress: 37.50% complete, ETA 00:16:48
+# Fork: 6 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+17991.133 ops/s
+# Warmup Iteration   2: 25655.172 ops/s
+# Warmup Iteration   3: 26958.125 ops/s
+# Warmup Iteration   4: 27056.506 ops/s
+# Warmup Iteration   5: 26890.427 ops/s
+# Warmup Iteration   6: 26664.743 ops/s
+# Warmup Iteration   7: 26893.838 ops/s
+# Warmup Iteration   8: 26672.085 ops/s
+# Warmup Iteration   9: 25788.199 ops/s
+# Warmup Iteration  10: 26322.462 ops/s
+# Warmup Iteration  11: 26795.463 ops/s
+# Warmup Iteration  12: 26767.113 ops/s
+# Warmup Iteration  13: 26849.761 ops/s
+# Warmup Iteration  14: 26532.190 ops/s
+# Warmup Iteration  15: 26870.666 ops/s
+# Warmup Iteration  16: 26381.111 ops/s
+# Warmup Iteration  17: 26826.131 ops/s
+# Warmup Iteration  18: 26879.954 ops/s
+# Warmup Iteration  19: 26449.269 ops/s
+# Warmup Iteration  20: 26943.213 ops/s
+Iteration   1: 21635.255 ops/s
+Iteration   2: 26761.847 ops/s
+Iteration   3: 26764.838 ops/s
+Iteration   4: 26662.575 ops/s
+Iteration   5: 26531.177 ops/s
+Iteration   6: 26849.980 ops/s
+Iteration   7: 26787.580 ops/s
+Iteration   8: 26868.956 ops/s
+Iteration   9: 26826.263 ops/s
+Iteration  10: 26863.248 ops/s
+Iteration  11: 26815.915 ops/s
+Iteration  12: 26837.468 ops/s
+Iteration  13: 26882.700 ops/s
+Iteration  14: 26740.827 ops/s
+Iteration  15: 26905.514 ops/s
+Iteration  16: 26882.385 ops/s
+Iteration  17: 26838.353 ops/s
+Iteration  18: 26826.965 ops/s
+Iteration  19: 26726.743 ops/s
+Iteration  20: 25224.789 ops/s
+
+# Run progress: 40.00% complete, ETA 00:16:07
+# Fork: 7 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+18518.636 ops/s
+# Warmup Iteration   2: 26101.938 ops/s
+# Warmup Iteration   3: 27075.070 ops/s
+# Warmup Iteration   4: 27241.618 ops/s
+# Warmup Iteration   5: 27144.497 ops/s
+# Warmup Iteration   6: 26914.342 ops/s
+# Warmup Iteration   7: 27128.501 ops/s
+# Warmup Iteration   8: 26871.364 ops/s
+# Warmup Iteration   9: 27038.067 ops/s
+# Warmup Iteration  10: 26907.342 ops/s
+# Warmup Iteration  11: 26942.334 ops/s
+# Warmup Iteration  12: 27088.131 ops/s
+# Warmup Iteration  13: 23596.668 ops/s
+# Warmup Iteration  14: 27043.229 ops/s
+# Warmup Iteration  15: 27300.659 ops/s
+# Warmup Iteration  16: 27382.778 ops/s
+# Warmup Iteration  17: 27364.500 ops/s
+# Warmup Iteration  18: 26571.731 ops/s
+# Warmup Iteration  19: 27202.234 ops/s
+# Warmup Iteration  20: 27431.034 ops/s
+Iteration   1: 27383.312 ops/s
+Iteration   2: 27387.401 ops/s
+Iteration   3: 27417.741 ops/s
+Iteration   4: 27311.390 ops/s
+Iteration   5: 27448.997 ops/s
+Iteration   6: 27372.126 ops/s
+Iteration   7: 27459.074 ops/s
+Iteration   8: 27060.014 ops/s
+Iteration   9: 27008.804 ops/s
+Iteration  10: 27296.387 ops/s
+Iteration  11: 27431.342 ops/s
+Iteration  12: 27440.429 ops/s
+Iteration  13: 27483.690 ops/s
+Iteration  14: 27294.318 ops/s
+Iteration  15: 27500.998 ops/s
+Iteration  16: 27330.163 ops/s
+Iteration  17: 27379.906 ops/s
+Iteration  18: 27468.275 ops/s
+Iteration  19: 27300.069 ops/s
+Iteration  20: 27459.008 ops/s
+
+# Run progress: 42.50% complete, ETA 00:15:27
+# Fork: 8 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+18090.491 ops/s
+# Warmup Iteration   2: 26528.747 ops/s
+# Warmup Iteration   3: 26949.816 ops/s
+# Warmup Iteration   4: 27801.171 ops/s
+# Warmup Iteration   5: 27792.056 ops/s
+# Warmup Iteration   6: 27354.217 ops/s
+# Warmup Iteration   7: 27605.235 ops/s
+# Warmup Iteration   8: 27404.221 ops/s
+# Warmup Iteration   9: 27367.183 ops/s
+# Warmup Iteration  10: 27565.531 ops/s
+# Warmup Iteration  11: 27431.267 ops/s
+# Warmup Iteration  12: 27526.480 ops/s
+# Warmup Iteration  13: 27615.948 ops/s
+# Warmup Iteration  14: 27569.937 ops/s
+# Warmup Iteration  15: 27590.864 ops/s
+# Warmup Iteration  16: 27613.950 ops/s
+# Warmup Iteration  17: 27517.752 ops/s
+# Warmup Iteration  18: 27569.125 ops/s
+# Warmup Iteration  19: 27557.020 ops/s
+# Warmup Iteration  20: 27129.319 ops/s
+Iteration   1: 27551.670 ops/s
+Iteration   2: 27645.460 ops/s
+Iteration   3: 27400.479 ops/s
+Iteration   4: 27646.377 ops/s
+Iteration   5: 27561.165 ops/s
+Iteration   6: 27515.517 ops/s
+Iteration   7: 27649.391 ops/s
+Iteration   8: 27417.924 ops/s
+Iteration   9: 27547.322 ops/s
+Iteration  10: 27554.122 ops/s
+Iteration  11: 27554.611 ops/s
+Iteration  12: 27725.990 ops/s
+Iteration  13: 27370.598 ops/s
+Iteration  14: 27661.749 ops/s
+Iteration  15: 27689.165 ops/s
+Iteration  16: 27536.598 ops/s
+Iteration  17: 20127.809 ops/s
+Iteration  18: 24612.953 ops/s
+Iteration  19: 27508.530 ops/s
+Iteration  20: 27559.934 ops/s
+
+# Run progress: 45.00% complete, ETA 00:14:47
+# Fork: 9 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+18882.781 ops/s
+# Warmup Iteration   2: 27378.905 ops/s
+# Warmup Iteration   3: 28278.275 ops/s
+# Warmup Iteration   4: 28386.209 ops/s
+# Warmup Iteration   5: 28100.427 ops/s
+# Warmup Iteration   6: 28238.787 ops/s
+# Warmup Iteration   7: 27992.327 ops/s
+# Warmup Iteration   8: 28050.988 ops/s
+# Warmup Iteration   9: 28246.228 ops/s
+# Warmup Iteration  10: 27718.994 ops/s
+# Warmup Iteration  11: 28108.513 ops/s
+# Warmup Iteration  12: 28277.692 ops/s
+# Warmup Iteration  13: 28000.863 ops/s
+# Warmup Iteration  14: 28220.129 ops/s
+# Warmup Iteration  15: 28260.246 ops/s
+# Warmup Iteration  16: 28097.802 ops/s
+# Warmup Iteration  17: 28217.286 ops/s
+# Warmup Iteration  18: 28149.367 ops/s
+# Warmup Iteration  19: 28086.211 ops/s
+# Warmup Iteration  20: 23966.158 ops/s
+Iteration   1: 28618.345 ops/s
+Iteration   2: 27599.193 ops/s
+Iteration   3: 28454.569 ops/s
+Iteration   4: 28655.662 ops/s
+Iteration   5: 28209.726 ops/s
+Iteration   6: 28269.113 ops/s
+Iteration   7: 28170.750 ops/s
+Iteration   8: 27904.924 ops/s
+Iteration   9: 28182.321 ops/s
+Iteration  10: 27987.732 ops/s
+Iteration  11: 28252.653 ops/s
+Iteration  12: 28095.000 ops/s
+Iteration  13: 28023.069 ops/s
+Iteration  14: 28129.056 ops/s
+Iteration  15: 28069.192 ops/s
+Iteration  16: 28207.595 ops/s
+Iteration  17: 28313.291 ops/s
+Iteration  18: 27828.971 ops/s
+Iteration  19: 28168.470 ops/s
+Iteration  20: 27759.860 ops/s
+
+# Run progress: 47.50% complete, ETA 00:14:06
+# Fork: 10 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+18584.990 ops/s
+# Warmup Iteration   2: 27148.312 ops/s
+# Warmup Iteration   3: 26742.465 ops/s
+# Warmup Iteration   4: 28229.389 ops/s
+# Warmup Iteration   5: 27819.832 ops/s
+# Warmup Iteration   6: 27770.036 ops/s
+# Warmup Iteration   7: 27782.685 ops/s
+# Warmup Iteration   8: 27793.608 ops/s
+# Warmup Iteration   9: 27854.931 ops/s
+# Warmup Iteration  10: 27777.954 ops/s
+# Warmup Iteration  11: 27834.235 ops/s
+# Warmup Iteration  12: 27924.171 ops/s
+# Warmup Iteration  13: 27823.699 ops/s
+# Warmup Iteration  14: 27760.175 ops/s
+# Warmup Iteration  15: 27854.393 ops/s
+# Warmup Iteration  16: 27867.105 ops/s
+# Warmup Iteration  17: 27935.868 ops/s
+# Warmup Iteration  18: 27752.531 ops/s
+# Warmup Iteration  19: 27842.682 ops/s
+# Warmup Iteration  20: 27900.336 ops/s
+Iteration   1: 27888.993 ops/s
+Iteration   2: 27849.201 ops/s
+Iteration   3: 27800.478 ops/s
+Iteration   4: 27877.931 ops/s
+Iteration   5: 27912.655 ops/s
+Iteration   6: 27791.642 ops/s
+Iteration   7: 27732.803 ops/s
+Iteration   8: 27656.732 ops/s
+Iteration   9: 27838.669 ops/s
+Iteration  10: 27407.936 ops/s
+Iteration  11: 27882.966 ops/s
+Iteration  12: 27804.129 ops/s
+Iteration  13: 27739.106 ops/s
+Iteration  14: 27905.121 ops/s
+Iteration  15: 27643.390 ops/s
+Iteration  16: 27884.195 ops/s
+Iteration  17: 27857.800 ops/s
+Iteration  18: 27788.811 ops/s
+Iteration  19: 27945.265 ops/s
+Iteration  20: 22733.981 ops/s
+
+
+Result "functionalParallel":
+  27122.594 ±(99.9%) 269.618 ops/s [Average]
+  (min, avg, max) = (18678.702, 27122.594, 28655.662), stdev = 1141.579
+  CI (99.9%): [26852.976, 27392.212] (assumes normal distribution)
+
+
+# JMH 1.11.3 (released 111 days ago, please consider updating!)
+# VM version: JDK 1.8.0_20-ea, VM 25.20-b17
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wallerlab.yoink.SetOfBenchmarks.functionalParallelImperativeCDC
+
+# Run progress: 50.00% complete, ETA 00:13:26
+# Fork: 1 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+15574.989 ops/s
+# Warmup Iteration   2: 23278.647 ops/s
+# Warmup Iteration   3: 27229.547 ops/s
+# Warmup Iteration   4: 27323.157 ops/s
+# Warmup Iteration   5: 27071.316 ops/s
+# Warmup Iteration   6: 27087.410 ops/s
+# Warmup Iteration   7: 26786.147 ops/s
+# Warmup Iteration   8: 26873.182 ops/s
+# Warmup Iteration   9: 26960.179 ops/s
+# Warmup Iteration  10: 26638.795 ops/s
+# Warmup Iteration  11: 26967.443 ops/s
+# Warmup Iteration  12: 26802.692 ops/s
+# Warmup Iteration  13: 26774.137 ops/s
+# Warmup Iteration  14: 27057.742 ops/s
+# Warmup Iteration  15: 26781.146 ops/s
+# Warmup Iteration  16: 26962.494 ops/s
+# Warmup Iteration  17: 26893.973 ops/s
+# Warmup Iteration  18: 26839.489 ops/s
+# Warmup Iteration  19: 26673.323 ops/s
+# Warmup Iteration  20: 26173.008 ops/s
+Iteration   1: 26845.303 ops/s
+Iteration   2: 26874.540 ops/s
+Iteration   3: 26756.780 ops/s
+Iteration   4: 26812.035 ops/s
+Iteration   5: 26941.056 ops/s
+Iteration   6: 26757.762 ops/s
+Iteration   7: 26808.064 ops/s
+Iteration   8: 26937.029 ops/s
+Iteration   9: 26786.734 ops/s
+Iteration  10: 26848.699 ops/s
+Iteration  11: 27011.719 ops/s
+Iteration  12: 26847.323 ops/s
+Iteration  13: 26942.349 ops/s
+Iteration  14: 26999.719 ops/s
+Iteration  15: 26894.906 ops/s
+Iteration  16: 26873.956 ops/s
+Iteration  17: 26968.220 ops/s
+Iteration  18: 26839.718 ops/s
+Iteration  19: 26939.751 ops/s
+Iteration  20: 27006.977 ops/s
+
+# Run progress: 52.50% complete, ETA 00:12:46
+# Fork: 2 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+17529.611 ops/s
+# Warmup Iteration   2: 23513.455 ops/s
+# Warmup Iteration   3: 27217.817 ops/s
+# Warmup Iteration   4: 27466.625 ops/s
+# Warmup Iteration   5: 27478.571 ops/s
+# Warmup Iteration   6: 27488.781 ops/s
+# Warmup Iteration   7: 27079.916 ops/s
+# Warmup Iteration   8: 27239.684 ops/s
+# Warmup Iteration   9: 26938.766 ops/s
+# Warmup Iteration  10: 27291.206 ops/s
+# Warmup Iteration  11: 27355.651 ops/s
+# Warmup Iteration  12: 27313.775 ops/s
+# Warmup Iteration  13: 27302.897 ops/s
+# Warmup Iteration  14: 27218.519 ops/s
+# Warmup Iteration  15: 27285.154 ops/s
+# Warmup Iteration  16: 27255.453 ops/s
+# Warmup Iteration  17: 27226.848 ops/s
+# Warmup Iteration  18: 27354.888 ops/s
+# Warmup Iteration  19: 22392.478 ops/s
+# Warmup Iteration  20: 26998.112 ops/s
+Iteration   1: 27352.447 ops/s
+Iteration   2: 27183.275 ops/s
+Iteration   3: 27348.215 ops/s
+Iteration   4: 27221.069 ops/s
+Iteration   5: 27232.480 ops/s
+Iteration   6: 27371.369 ops/s
+Iteration   7: 26256.742 ops/s
+Iteration   8: 27155.618 ops/s
+Iteration   9: 27285.491 ops/s
+Iteration  10: 27039.120 ops/s
+Iteration  11: 27420.164 ops/s
+Iteration  12: 27155.984 ops/s
+Iteration  13: 27119.935 ops/s
+Iteration  14: 27291.092 ops/s
+Iteration  15: 27078.066 ops/s
+Iteration  16: 27327.692 ops/s
+Iteration  17: 27026.711 ops/s
+Iteration  18: 27411.604 ops/s
+Iteration  19: 26989.215 ops/s
+Iteration  20: 26779.918 ops/s
+
+# Run progress: 55.00% complete, ETA 00:12:05
+# Fork: 3 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+16677.622 ops/s
+# Warmup Iteration   2: 23698.854 ops/s
+# Warmup Iteration   3: 26976.924 ops/s
+# Warmup Iteration   4: 27642.391 ops/s
+# Warmup Iteration   5: 27643.862 ops/s
+# Warmup Iteration   6: 27313.687 ops/s
+# Warmup Iteration   7: 27406.833 ops/s
+# Warmup Iteration   8: 27273.597 ops/s
+# Warmup Iteration   9: 27322.659 ops/s
+# Warmup Iteration  10: 27376.317 ops/s
+# Warmup Iteration  11: 27287.908 ops/s
+# Warmup Iteration  12: 27442.730 ops/s
+# Warmup Iteration  13: 27385.267 ops/s
+# Warmup Iteration  14: 27402.898 ops/s
+# Warmup Iteration  15: 27437.649 ops/s
+# Warmup Iteration  16: 27303.261 ops/s
+# Warmup Iteration  17: 27317.385 ops/s
+# Warmup Iteration  18: 27362.092 ops/s
+# Warmup Iteration  19: 27255.928 ops/s
+# Warmup Iteration  20: 27240.929 ops/s
+Iteration   1: 27309.022 ops/s
+Iteration   2: 27368.295 ops/s
+Iteration   3: 27294.945 ops/s
+Iteration   4: 27382.872 ops/s
+Iteration   5: 27320.943 ops/s
+Iteration   6: 27335.043 ops/s
+Iteration   7: 27366.831 ops/s
+Iteration   8: 27343.810 ops/s
+Iteration   9: 27065.388 ops/s
+Iteration  10: 27427.434 ops/s
+Iteration  11: 27397.121 ops/s
+Iteration  12: 27296.560 ops/s
+Iteration  13: 26082.482 ops/s
+Iteration  14: 26798.892 ops/s
+Iteration  15: 27396.255 ops/s
+Iteration  16: 27342.534 ops/s
+Iteration  17: 27246.138 ops/s
+Iteration  18: 27351.357 ops/s
+Iteration  19: 22874.351 ops/s
+Iteration  20: 27217.360 ops/s
+
+# Run progress: 57.50% complete, ETA 00:11:25
+# Fork: 4 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+16194.503 ops/s
+# Warmup Iteration   2: 23861.655 ops/s
+# Warmup Iteration   3: 26229.322 ops/s
+# Warmup Iteration   4: 26917.515 ops/s
+# Warmup Iteration   5: 26159.432 ops/s
+# Warmup Iteration   6: 22932.236 ops/s
+# Warmup Iteration   7: 25963.942 ops/s
+# Warmup Iteration   8: 26049.789 ops/s
+# Warmup Iteration   9: 26394.808 ops/s
+# Warmup Iteration  10: 26679.567 ops/s
+# Warmup Iteration  11: 26389.982 ops/s
+# Warmup Iteration  12: 26526.937 ops/s
+# Warmup Iteration  13: 26519.899 ops/s
+# Warmup Iteration  14: 26384.436 ops/s
+# Warmup Iteration  15: 26727.132 ops/s
+# Warmup Iteration  16: 26652.268 ops/s
+# Warmup Iteration  17: 26533.094 ops/s
+# Warmup Iteration  18: 26480.360 ops/s
+# Warmup Iteration  19: 26418.031 ops/s
+# Warmup Iteration  20: 26620.511 ops/s
+Iteration   1: 26756.880 ops/s
+Iteration   2: 26740.697 ops/s
+Iteration   3: 26576.541 ops/s
+Iteration   4: 26666.233 ops/s
+Iteration   5: 26606.326 ops/s
+Iteration   6: 26514.068 ops/s
+Iteration   7: 26659.070 ops/s
+Iteration   8: 26584.363 ops/s
+Iteration   9: 26677.846 ops/s
+Iteration  10: 26840.524 ops/s
+Iteration  11: 26585.679 ops/s
+Iteration  12: 26787.178 ops/s
+Iteration  13: 26628.025 ops/s
+Iteration  14: 26536.482 ops/s
+Iteration  15: 26505.805 ops/s
+Iteration  16: 18139.645 ops/s
+Iteration  17: 22642.659 ops/s
+Iteration  18: 26635.036 ops/s
+Iteration  19: 26602.897 ops/s
+Iteration  20: 26703.640 ops/s
+
+# Run progress: 60.00% complete, ETA 00:10:45
+# Fork: 5 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+16373.384 ops/s
+# Warmup Iteration   2: 22365.148 ops/s
+# Warmup Iteration   3: 25823.517 ops/s
+# Warmup Iteration   4: 26391.618 ops/s
+# Warmup Iteration   5: 26593.066 ops/s
+# Warmup Iteration   6: 26130.156 ops/s
+# Warmup Iteration   7: 26403.441 ops/s
+# Warmup Iteration   8: 26177.890 ops/s
+# Warmup Iteration   9: 25757.585 ops/s
+# Warmup Iteration  10: 26082.530 ops/s
+# Warmup Iteration  11: 26229.140 ops/s
+# Warmup Iteration  12: 26185.918 ops/s
+# Warmup Iteration  13: 26242.778 ops/s
+# Warmup Iteration  14: 26334.669 ops/s
+# Warmup Iteration  15: 26465.117 ops/s
+# Warmup Iteration  16: 26128.588 ops/s
+# Warmup Iteration  17: 26477.991 ops/s
+# Warmup Iteration  18: 22508.788 ops/s
+# Warmup Iteration  19: 23395.994 ops/s
+# Warmup Iteration  20: 26442.922 ops/s
+Iteration   1: 26323.249 ops/s
+Iteration   2: 25992.918 ops/s
+Iteration   3: 26404.734 ops/s
+Iteration   4: 26037.069 ops/s
+Iteration   5: 26362.710 ops/s
+Iteration   6: 26384.169 ops/s
+Iteration   7: 26141.744 ops/s
+Iteration   8: 25918.730 ops/s
+Iteration   9: 26436.593 ops/s
+Iteration  10: 26217.819 ops/s
+Iteration  11: 26295.272 ops/s
+Iteration  12: 26466.679 ops/s
+Iteration  13: 26096.846 ops/s
+Iteration  14: 26486.692 ops/s
+Iteration  15: 26369.664 ops/s
+Iteration  16: 26271.077 ops/s
+Iteration  17: 26564.991 ops/s
+Iteration  18: 26178.662 ops/s
+Iteration  19: 25755.754 ops/s
+Iteration  20: 26293.318 ops/s
+
+# Run progress: 62.50% complete, ETA 00:10:04
+# Fork: 6 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+16480.344 ops/s
+# Warmup Iteration   2: 22955.302 ops/s
+# Warmup Iteration   3: 26585.986 ops/s
+# Warmup Iteration   4: 26978.692 ops/s
+# Warmup Iteration   5: 26956.312 ops/s
+# Warmup Iteration   6: 26960.901 ops/s
+# Warmup Iteration   7: 26459.507 ops/s
+# Warmup Iteration   8: 26774.702 ops/s
+# Warmup Iteration   9: 26719.550 ops/s
+# Warmup Iteration  10: 26664.408 ops/s
+# Warmup Iteration  11: 26916.314 ops/s
+# Warmup Iteration  12: 26547.130 ops/s
+# Warmup Iteration  13: 26718.823 ops/s
+# Warmup Iteration  14: 26741.246 ops/s
+# Warmup Iteration  15: 26655.525 ops/s
+# Warmup Iteration  16: 26600.656 ops/s
+# Warmup Iteration  17: 26772.470 ops/s
+# Warmup Iteration  18: 26731.836 ops/s
+# Warmup Iteration  19: 26753.026 ops/s
+# Warmup Iteration  20: 26865.191 ops/s
+Iteration   1: 26539.654 ops/s
+Iteration   2: 26736.380 ops/s
+Iteration   3: 26774.625 ops/s
+Iteration   4: 26749.207 ops/s
+Iteration   5: 26751.830 ops/s
+Iteration   6: 26789.882 ops/s
+Iteration   7: 26410.562 ops/s
+Iteration   8: 26370.223 ops/s
+Iteration   9: 26405.101 ops/s
+Iteration  10: 26558.932 ops/s
+Iteration  11: 26802.612 ops/s
+Iteration  12: 26785.204 ops/s
+Iteration  13: 26522.601 ops/s
+Iteration  14: 26851.540 ops/s
+Iteration  15: 26719.093 ops/s
+Iteration  16: 26568.043 ops/s
+Iteration  17: 26856.437 ops/s
+Iteration  18: 22296.335 ops/s
+Iteration  19: 26739.758 ops/s
+Iteration  20: 26683.094 ops/s
+
+# Run progress: 65.00% complete, ETA 00:09:24
+# Fork: 7 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules50
+14106.590 ops/s
+# Warmup Iteration   2: 21711.886 ops/s
+# Warmup Iteration   3: 25639.736 ops/s
+# Warmup Iteration   4: 24162.576 ops/s
+# Warmup Iteration   5: 26696.629 ops/s
+# Warmup Iteration   6: 26138.896 ops/s
+# Warmup Iteration   7: 26527.194 ops/s
+# Warmup Iteration   8: 24585.764 ops/s
+# Warmup Iteration   9: 26653.754 ops/s
+# Warmup Iteration  10: 25729.505 ops/s
+# Warmup Iteration  11: 26164.292 ops/s
+# Warmup Iteration  12: 23513.105 ops/s
+# Warmup Iteration  13: 24493.229 ops/s
+# Warmup Iteration  14: 25578.223 ops/s
+# Warmup Iteration  15: 26257.953 ops/s
+# Warmup Iteration  16: 24170.323 ops/s
+# Warmup Iteration  17: 23571.609 ops/s
+# Warmup Iteration  18: 

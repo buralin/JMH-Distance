@@ -1,0 +1,8 @@
+Benchmark                                    Mode  Cnt    Score   Error  Units
+SetOfBenchmarks.commons                     thrpt  200  100.658 ± 0.692  ops/s
+SetOfBenchmarks.distanceCommons                ss   10    0.034 ± 0.004   s/op
+SetOfBenchmarks.distanceJBlas                  ss   10    0.023 ± 0.007   s/op
+SetOfBenchmarks.distanceJavaSplit              ss   10    0.025 ± 0.002   s/op
+SetOfBenchmarks.distanceKernel                 ss   10    0.129 ± 0.009   s/op
+SetOfBenchmarks.distanceKernelSharedMemory     ss   10    0.128 ± 0.013   s/op
+SetOfBenchmarks.distancejava                   ss   10    0.018 ± 0.005   s/op

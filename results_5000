@@ -1,0 +1,65 @@
+:compileJava UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:compileTestJava UP-TO-DATE
+:processTestResources UP-TO-DATE
+:testClasses UP-TO-DATE
+:compileJmhJava
+:processJmhResources UP-TO-DATE
+:jmhClasses
+:jmhRunBytecodeGenerator
+Processing 13 classes from /Users/waller/test/AHHHH/build/classes/jmh with "reflection" generator
+Writing out Java source to /Users/waller/test/AHHHH/build/jmh-generated-sources and resources to /Users/waller/test/AHHHH/build/jmh-generated-classes
+:jmhCompileGeneratedClasses
+:jmhJar
+:jmh
+# JMH 1.11.3 (released 111 days ago, please consider updating!)
+# VM version: JDK 1.8.0_20-ea, VM 25.20-b17
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wallerlab.yoink.SetOfBenchmarks.functional
+
+# Run progress: 0.00% complete, ETA 00:26:40
+# Fork: 1 of 10
+# Warmup Iteration   1: setting up molecules
+Qm threshold2.0
+buffer threshold5.0
+molecules5000
+89.545 ops/s
+# Warmup Iteration   2: 106.742 ops/s
+# Warmup Iteration   3: 97.515 ops/s
+# Warmup Iteration   4: 124.836 ops/s
+# Warmup Iteration   5: 125.439 ops/s
+# Warmup Iteration   6: 125.242 ops/s
+# Warmup Iteration   7: 124.681 ops/s
+# Warmup Iteration   8: 123.589 ops/s
+# Warmup Iteration   9: 110.329 ops/s
+# Warmup Iteration  10: 124.653 ops/s
+# Warmup Iteration  11: 124.317 ops/s
+# Warmup Iteration  12: 124.465 ops/s
+# Warmup Iteration  13: 124.628 ops/s
+# Warmup Iteration  14: 122.841 ops/s
+# Warmup Iteration  15: 122.743 ops/s
+# Warmup Iteration  16: 120.744 ops/s
+# Warmup Iteration  17: 122.634 ops/s
+# Warmup Iteration  18: 120.172 ops/s
+# Warmup Iteration  19: 119.775 ops/s
+# Warmup Iteration  20: 119.988 ops/s
+Iteration   1: 121.949 ops/s
+Iteration   2: 122.518 ops/s
+Iteration   3: 121.523 ops/s
+Iteration   4: 122.047 ops/s
+Iteration   5: 121.823 ops/s
+Iteration   6: 121.412 ops/s
+Iteration   7: 121.391 ops/s
+Iteration   8: 121.230 ops/s
+Iteration   9: :jmh FAILED
+
+BUILD FAILED
+
+Total time: 34.058 secs
