@@ -40,7 +40,7 @@ public class SetOfBenchmarks {
 		
 	
 		molecules = 
-				IntStream.range(0,100_000)
+				IntStream.range(0,1000)
 						 .parallel()
 						 .mapToObj(i -> new Molecule(i))
 						 .collect(Collectors.toList());
@@ -51,11 +51,11 @@ public class SetOfBenchmarks {
 		starter = new MethodStarter();
 
 	}
-
+/*
 	@Benchmark
 	public void commons(Blackhole bh) {
 		bh.consume(starter.calculateDistanceCommons( molecules,point));
-	}
+	}*/
 	@Benchmark
 	@Warmup(iterations = 1, time = 1)
 	@Measurement(iterations = 1, time = 3)
@@ -63,12 +63,13 @@ public class SetOfBenchmarks {
 	public void distanceKernelSharedMemory2(Blackhole bh) {
 		bh.consume(starter.calculateDistanceSharedMemorySplit2( molecules,point));
 	}
+	
 	@Benchmark
 	@Warmup(iterations = 1, time = 1)
 	@Measurement(iterations = 1, time = 3)
 	@BenchmarkMode(Mode.SingleShotTime)
 	public void distanceKernelSharedMemory(Blackhole bh) {
-		bh.consume(starter.calculateDistanceKernel( molecules,point));
+		bh.consume(starter.calculateDistanceKernelShared( molecules,point));
 	}
 	@Benchmark
 	@Warmup(iterations = 1, time = 1)
@@ -105,7 +106,7 @@ public class SetOfBenchmarks {
 	public void distanceJavaSplit (Blackhole bh){
 		bh.consume(starter.calculateDistanceJBlas( molecules,point));
 	}
-	@Benchmark
+	/*@Benchmark
     @Warmup(iterations = 1, time = 1)
     @Measurement(iterations = 1, time = 3)
     @BenchmarkMode(Mode.SingleShotTime)
@@ -126,7 +127,7 @@ public class SetOfBenchmarks {
     @BenchmarkMode(Mode.SingleShotTime)
 	public void  calculateGridDistanceKernelShared(Blackhole bh){
 		bh.consume(starter.calculateGridDistanceKernelShared( molecules,grid));
-	}
+	}*/
 	
     public static void main(String[] args) throws Exception {
 		Options options = new OptionsBuilder()

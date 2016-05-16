@@ -4,11 +4,7 @@ dontinline,*.*_sample_jmhStub
 dontinline,*.*_ss_jmhStub
 dontinline,*.*_thrpt_jmhStub
 inline,org/openjdk/jmh/infra/Blackhole.clearSinks
-inline,org/wallerlab/yoink/SetOfBenchmarks.calculateGridDistanceKernel
-inline,org/wallerlab/yoink/SetOfBenchmarks.calculateGridDistanceKernelShared
-inline,org/wallerlab/yoink/SetOfBenchmarks.commons
 inline,org/wallerlab/yoink/SetOfBenchmarks.distanceCommons
-inline,org/wallerlab/yoink/SetOfBenchmarks.distanceGridJava
 inline,org/wallerlab/yoink/SetOfBenchmarks.distanceJBlas
 inline,org/wallerlab/yoink/SetOfBenchmarks.distanceJavaSplit
 inline,org/wallerlab/yoink/SetOfBenchmarks.distanceKernel

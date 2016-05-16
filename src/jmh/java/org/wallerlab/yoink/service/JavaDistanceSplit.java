@@ -7,7 +7,6 @@ import org.wallerlab.yoink.domain.Point;
 
 public class JavaDistanceSplit implements IDistance
 	{
-		
 	    public float[] calculateDistance (List<Molecule> molecules,Point com )
 		{
 		double [] comVector = {com.getX(),com.getY(), com.getZ()};
@@ -28,8 +27,6 @@ public class JavaDistanceSplit implements IDistance
 		}
 		return distarray;
 	    }
-	    
-	    
 	    
 		public double javadist (double [] in1, double [] in2)
 		{

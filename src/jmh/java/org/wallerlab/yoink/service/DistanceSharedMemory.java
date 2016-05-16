@@ -32,8 +32,8 @@ public class DistanceSharedMemory implements IDistance
 	public float[] calculateDistance(List<Molecule> molecules, Point com) 
 	{
 	//number of atoms is currently set to 10 in the domain model. Multiply by three for three coords (x,y,z)
-	float[] coordVector = new float [molecules.size()*1000000*3];	
-	float[] comVector = new float [molecules.size()*1000000*3];
+	float[] coordVector = new float [molecules.size()*10*3];	
+	float[] comVector = {(float) com.getX(), (float) com.getY(), (float) com.getZ()};
  	int atomIndex =0;
 	 for(int i = 0; i<molecules.size();i++)
 	 {
@@ -62,10 +62,10 @@ public class DistanceSharedMemory implements IDistance
        
        // Load the ptx file.
        CUmodule module = new CUmodule();
-       cuModuleLoad(module, "Distance3.ptx");
+       cuModuleLoad(module, "DistShared.ptx");
        // Obtain a function pointer to the "add" function.
        CUfunction function = new CUfunction();
-       cuModuleGetFunction(function, module, "dist3");
+       cuModuleGetFunction(function, module, "distShared");
        
        int rows = 3;
        int columns = in1.length/3;
@@ -89,12 +89,12 @@ public class DistanceSharedMemory implements IDistance
        // Set up the kernel parameters: A pointer to an array
        // of pointers which point to the actual values.
        Pointer kernelParameters = Pointer.to(Pointer.to(d_in1),Pointer.to(d_in2),Pointer.to(d_out),
-       Pointer.to(new int[]{elements}));
+       Pointer.to(new int[]{columns}));
        
        // Call the kernel function.
-       int blockSizeX = 1024;
+       int blockSizeX = 288;
        int blockSizeY = 1;
-       int gridSizeX = (elements +blockSizeX -1)/blockSizeX;
+       int gridSizeX =  (columns/960)+1;
        cuLaunchKernel(function,
            gridSizeX,  1, 1,               // Grid dimension
            blockSizeX, blockSizeY, 1,      // Block dimension

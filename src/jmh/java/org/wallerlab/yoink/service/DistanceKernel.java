@@ -32,7 +32,6 @@ public class DistanceKernel implements IDistance {
 
 	@Override
 	public float[] calculateDistance(List<Molecule> molecules,Point com ) {
-		//number of atoms is currently set to 10 in the domain model. Multiply by three for three coords (x,y,z)
 		float[] coordVector = new float [molecules.size()*10*3];	
 		
 		int atomIndex =0;
@@ -44,7 +43,6 @@ public class DistanceKernel implements IDistance {
 				coordVector[atomIndex+2*((coordVector.length)/3)] = (float) molecules.get(i).getAtoms().get(atomIndex).getZ();
 		    }
 		}
-		//System.out.println("COORD VECTOR !!!!! *************** " +Arrays.toString(coordVector));
 		
 		
 		float[] comVector = {(float) com.getX(),(float) com.getY(),(float) com.getZ()};
@@ -113,11 +111,6 @@ public class DistanceKernel implements IDistance {
         // to the host.
         float out [] = new float [columns];
         cuMemcpyDtoH(Pointer.to(out), d_out, columns * Sizeof.FLOAT);
-        
-        
-		//System.out.println("OUT *********************************** "+ Arrays.toString(out));
-
-        
         
         cuMemFree(d_in1);
         cuMemFree(d_in2);

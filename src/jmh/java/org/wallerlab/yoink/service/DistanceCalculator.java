@@ -23,7 +23,6 @@ public class DistanceCalculator implements IDistance
 				coordVector[atomIndex+2*((coordVector.length)/3)] = (float) molecules.get(i).getAtoms().get(atomIndex).getZ();
 		    }
 		}
-		//System.out.println("COORD VECTOR !!!!! *************** " +Arrays.toString(coordVector));
 		
 		
 		float[] comVector = {(float) com.getX(),(float) com.getY(),(float) com.getZ()};
