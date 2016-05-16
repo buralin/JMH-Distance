@@ -40,7 +40,7 @@ public class SetOfBenchmarks {
 		
 	
 		molecules = 
-				IntStream.range(0,1000)
+				IntStream.range(0,10_000)
 						 .parallel()
 						 .mapToObj(i -> new Molecule(i))
 						 .collect(Collectors.toList());
@@ -56,15 +56,15 @@ public class SetOfBenchmarks {
 	public void commons(Blackhole bh) {
 		bh.consume(starter.calculateDistanceCommons( molecules,point));
 	}*/
-	@Benchmark
+/*	@Benchmark
 	@Warmup(iterations = 1, time = 1)
 	@Measurement(iterations = 1, time = 3)
 	@BenchmarkMode(Mode.SingleShotTime)
 	public void distanceKernelSharedMemory2(Blackhole bh) {
 		bh.consume(starter.calculateDistanceSharedMemorySplit2( molecules,point));
 	}
-	
-	@Benchmark
+	*/
+	/*@Benchmark
 	@Warmup(iterations = 1, time = 1)
 	@Measurement(iterations = 1, time = 3)
 	@BenchmarkMode(Mode.SingleShotTime)
@@ -104,9 +104,9 @@ public class SetOfBenchmarks {
     @Measurement(iterations = 1, time = 3)
     @BenchmarkMode(Mode.SingleShotTime)
 	public void distanceJavaSplit (Blackhole bh){
-		bh.consume(starter.calculateDistanceJBlas( molecules,point));
-	}
-	/*@Benchmark
+		bh.consume(starter.calculateDistanceJavaSplit( molecules,point));
+	}*/
+	@Benchmark
     @Warmup(iterations = 1, time = 1)
     @Measurement(iterations = 1, time = 3)
     @BenchmarkMode(Mode.SingleShotTime)
@@ -121,6 +121,21 @@ public class SetOfBenchmarks {
 	public void  calculateGridDistanceKernel(Blackhole bh){
 		bh.consume(starter.calculateGridDistanceKernel( molecules,grid));
 	}
+	@Benchmark
+    @Warmup(iterations = 1, time = 1)
+    @Measurement(iterations = 1, time = 3)
+    @BenchmarkMode(Mode.SingleShotTime)
+	public void calculateGridDistanceJBLAS(Blackhole bh){
+		bh.consume(starter.calculateGridDistanceJBLAS( molecules,grid));
+	}
+	@Benchmark
+    @Warmup(iterations = 1, time = 1)
+    @Measurement(iterations = 1, time = 3)
+    @BenchmarkMode(Mode.SingleShotTime)
+	public void calculateGridDistanceKernelAllocationTime(Blackhole bh){
+		bh.consume(starter.calculateGridDistanceKernelAllocationTime( molecules,grid));
+	}
+	/*
 	@Benchmark
     @Warmup(iterations = 1, time = 1)
     @Measurement(iterations = 1, time = 3)

@@ -11,7 +11,7 @@
 .address_size 64
 
 	// .globl	distShared
-// distShared$__cuda_local_var_221816_31_non_const_c has been demoted
+// distShared$__cuda_local_var_221832_32_non_const_s has been demoted
 
 .visible .entry distShared(
 	.param .u64 distShared_param_0,
@@ -21,71 +21,69 @@
 )
 {
 	.reg .pred 	%p<4>;
-	.reg .f32 	%f<12>;
-	.reg .b32 	%r<19>;
-	.reg .b64 	%rd<19>;
+	.reg .f32 	%f<14>;
+	.reg .b32 	%r<15>;
+	.reg .b64 	%rd<21>;
 	// demoted variable
-	.shared .align 4 .b8 distShared$__cuda_local_var_221816_31_non_const_c[1152];
+	.shared .align 4 .b8 distShared$__cuda_local_var_221832_32_non_const_s[3840];
 
-	ld.param.u64 	%rd7, [distShared_param_0];
-	ld.param.u64 	%rd8, [distShared_param_1];
-	ld.param.u64 	%rd9, [distShared_param_2];
-	ld.param.u32 	%r7, [distShared_param_3];
-	setp.lt.s32	%p1, %r7, 288;
-	@%p1 bra 	BB0_5;
+	ld.param.u64 	%rd8, [distShared_param_0];
+	ld.param.u64 	%rd9, [distShared_param_1];
+	ld.param.u64 	%rd10, [distShared_param_2];
+	ld.param.u32 	%r9, [distShared_param_3];
+	mov.u32 	%r1, %ctaid.x;
+	mul.lo.s32 	%r10, %r9, %r1;
+	mul.lo.s32 	%r14, %r10, 960;
+	add.s32 	%r3, %r9, -1;
+	mov.u32 	%r11, %ntid.x;
+	mov.u32 	%r4, %tid.x;
+	mad.lo.s32 	%r5, %r11, %r1, %r4;
+	setp.lt.s32	%p1, %r3, 0;
+	@%p1 bra 	BB0_4;
 
-	cvta.to.global.u64 	%rd1, %rd8;
-	cvta.to.global.u64 	%rd2, %rd7;
-	mov.u32 	%r9, %ctaid.x;
-	mov.u32 	%r10, %ntid.x;
-	mov.u32 	%r11, %tid.x;
-	mad.lo.s32 	%r12, %r9, %r10, %r11;
-	mul.hi.s32 	%r13, %r7, 954437177;
-	shr.u32 	%r14, %r13, 31;
-	shr.s32 	%r15, %r13, 6;
-	add.s32 	%r1, %r15, %r14;
-	cvta.to.global.u64 	%rd10, %rd9;
-	mul.wide.u32 	%rd11, %r11, 4;
-	mov.u64 	%rd12, distShared$__cuda_local_var_221816_31_non_const_c;
-	add.s64 	%rd3, %rd12, %rd11;
-	mul.wide.s32 	%rd13, %r12, 4;
-	add.s64 	%rd4, %rd10, %rd13;
-	mov.u32 	%r17, 0;
+	cvta.to.global.u64 	%rd11, %rd9;
+	cvta.to.global.u64 	%rd12, %rd8;
+	add.s32 	%r6, %r3, %r14;
+	mul.wide.s32 	%rd13, %r4, 4;
+	mov.u64 	%rd14, distShared$__cuda_local_var_221832_32_non_const_s;
+	add.s64 	%rd1, %rd14, %rd13;
+	mul.lo.s32 	%r12, %r1, %r9;
+	mul.lo.s32 	%r13, %r12, 960;
+	mul.wide.s32 	%rd15, %r13, 4;
+	add.s64 	%rd20, %rd11, %rd15;
+	add.s64 	%rd19, %rd12, %rd15;
 
 BB0_2:
-	mov.u64 	%rd18, 1;
-	mov.u32 	%r18, -288;
-
-BB0_3:
-	add.s64 	%rd18, %rd18, -18;
-	add.s32 	%r18, %r18, 18;
-	setp.ne.s32	%p2, %r18, 0;
-	@%p2 bra 	BB0_3;
-
-	shl.b64 	%rd15, %rd18, 2;
-	sub.s64 	%rd16, %rd2, %rd15;
-	sub.s64 	%rd17, %rd1, %rd15;
-	ld.global.f32 	%f1, [%rd17];
-	ld.global.f32 	%f2, [%rd16];
-	sub.f32 	%f3, %f2, %f1;
-	st.shared.f32 	[%rd3], %f3;
+	ldu.global.f32 	%f7, [%rd20];
+	ldu.global.f32 	%f8, [%rd19];
+	sub.f32 	%f9, %f8, %f7;
+	st.shared.f32 	[%rd1], %f9;
 	bar.sync 	0;
-	ld.shared.f32 	%f4, [distShared$__cuda_local_var_221816_31_non_const_c+1140];
-	ld.shared.f32 	%f5, [distShared$__cuda_local_var_221816_31_non_const_c+1144];
-	mul.f32 	%f6, %f5, %f5;
-	fma.rn.f32 	%f7, %f4, %f4, %f6;
-	ld.shared.f32 	%f8, [distShared$__cuda_local_var_221816_31_non_const_c+1148];
-	fma.rn.f32 	%f9, %f8, %f8, %f7;
-	sqrt.rn.f32 	%f10, %f9;
-	cvt.rzi.s32.f32	%r5, %f10;
+	ld.shared.f32 	%f1, [distShared$__cuda_local_var_221832_32_non_const_s+3828];
+	ld.shared.f32 	%f2, [distShared$__cuda_local_var_221832_32_non_const_s+3832];
+	ld.shared.f32 	%f3, [distShared$__cuda_local_var_221832_32_non_const_s+3836];
 	bar.sync 	0;
-	cvt.rn.f32.s32	%f11, %r5;
-	st.global.f32 	[%rd4], %f11;
-	add.s32 	%r17, %r17, 1;
-	setp.lt.s32	%p3, %r17, %r1;
-	@%p3 bra 	BB0_2;
+	add.s64 	%rd20, %rd20, 3840;
+	add.s64 	%rd19, %rd19, 3840;
+	add.s32 	%r14, %r14, 960;
+	setp.le.s32	%p2, %r14, %r6;
+	@%p2 bra 	BB0_2;
 
-BB0_5:
+	mul.f32 	%f10, %f2, %f2;
+	fma.rn.f32 	%f11, %f1, %f1, %f10;
+	fma.rn.f32 	%f12, %f3, %f3, %f11;
+	sqrt.rn.f32 	%f13, %f12;
+
+BB0_4:
+	setp.ge.s32	%p3, %r5, %r9;
+	@%p3 bra 	BB0_6;
+
+	cvta.to.global.u64 	%rd16, %rd10;
+	mul.wide.s32 	%rd17, %r5, 4;
+	add.s64 	%rd18, %rd16, %rd17;
+	st.global.f32 	[%rd18], %f13;
+
+BB0_6:
 	ret;
 }
 

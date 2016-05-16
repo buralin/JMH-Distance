@@ -16,16 +16,15 @@ import org.wallerlab.yoink.domain.Molecule;
 import org.wallerlab.yoink.domain.Point;
 import org.wallerlab.yoink.domain.Region;
 import org.wallerlab.yoink.service.Commons;
-import org.wallerlab.yoink.service.DistGridShared;
 import org.wallerlab.yoink.service.DistanceCalculator;
 import org.wallerlab.yoink.service.DistanceKernel;
-import org.wallerlab.yoink.service.DistanceKernelSharedMemory2;
-import org.wallerlab.yoink.service.DistanceSharedMemory;
 import org.wallerlab.yoink.service.ICalculateGridDistance;
 import org.wallerlab.yoink.service.IDistance;
 import org.wallerlab.yoink.service.JBLAS;
+import org.wallerlab.yoink.service.JBLASDistGrid;
 import org.wallerlab.yoink.service.JavaDistanceSplit;
 import org.wallerlab.yoink.service.ShortestDistanceJava;
+import org.wallerlab.yoink.service.ShortestDistanceKerlenAllocationtTme;
 import org.wallerlab.yoink.service.ShortestDistanceKernel;
 
 
@@ -36,11 +35,6 @@ public class MethodStarter {
 		float[] distances =  dc.calculateDistance(molecules, point);
 		//pause();
 		return distances; 	
-	}
-	public float [] calculateDistanceKernelShared(List<Molecule> molecules,Point point )
-	{
-		IDistance dc = new DistanceSharedMemory();
-		return dc.calculateDistance(molecules, point);
 	}
 	public float[] calculateDistanceJava(List<Molecule> molecules,Point point )
 	{
@@ -65,11 +59,6 @@ public class MethodStarter {
 		IDistance dc = new JavaDistanceSplit();
 		return dc.calculateDistance(molecules, point);
 	}
-	public float [] calculateDistanceSharedMemorySplit2(List<Molecule> molecules,Point point )
-	{
-		IDistance dc = new DistanceKernelSharedMemory2();
-		return dc.calculateDistance(molecules, point);
-	}
 	public float [] calculateGridDistance (List<Molecule> molecules, GridPoint grid)
 	{
 		ICalculateGridDistance dc = new ShortestDistanceJava();
@@ -80,9 +69,14 @@ public class MethodStarter {
 		ICalculateGridDistance dc = new ShortestDistanceKernel();
 		return dc.calculateDistance(molecules, grid);
 	}
-	public float [] calculateGridDistanceKernelShared (List<Molecule> molecules, GridPoint grid)
+	public float [] calculateGridDistanceJBLAS (List<Molecule> molecules, GridPoint grid)
 	{
-		ICalculateGridDistance dc = new DistGridShared();
+		ICalculateGridDistance dc = new JBLASDistGrid();
+		return dc.calculateDistance(molecules, grid);
+	}
+	public float [] calculateGridDistanceKernelAllocationTime (List<Molecule> molecules, GridPoint grid)
+	{
+		ICalculateGridDistance dc = new ShortestDistanceKerlenAllocationtTme();
 		return dc.calculateDistance(molecules, grid);
 	}
 	

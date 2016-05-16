@@ -15,12 +15,14 @@ public class DistanceCalculator implements IDistance
 		float[] coordVector = new float [molecules.size()*10*3];	
 		
 		int atomIndex =0;
+		int counter = 0;
 		for(int i = 0; i<molecules.size();i++){
 			//System.out.println("MOLECULE SIZE " + molecules.size());
 		    for(atomIndex=0; atomIndex < molecules.get(i).getAtoms().size();atomIndex ++){
-		    	coordVector[atomIndex] = (float) molecules.get(i).getAtoms().get(atomIndex).getX();
-				coordVector[atomIndex+(coordVector.length)/3] = (float)molecules.get(i).getAtoms().get(atomIndex).getY();
-				coordVector[atomIndex+2*((coordVector.length)/3)] = (float) molecules.get(i).getAtoms().get(atomIndex).getZ();
+		    	coordVector[counter ] = (float) molecules.get(i).getAtoms().get(atomIndex).getX();
+				coordVector[counter +1] = (float)molecules.get(i).getAtoms().get(atomIndex).getY();
+				coordVector[counter +2] = (float) molecules.get(i).getAtoms().get(atomIndex).getZ();
+				counter +=3;
 		    }
 		}
 		

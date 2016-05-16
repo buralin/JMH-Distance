@@ -1,7 +1,5 @@
-Benchmark                                   Mode  Cnt  Score    Error  Units
-SetOfBenchmarks.distanceCommons               ss   10  0,004 ±  0,001   s/op
-SetOfBenchmarks.distanceJBlas                 ss   10  0,004 ±  0,001   s/op
-SetOfBenchmarks.distanceJavaSplit             ss   10  0,004 ±  0,001   s/op
-SetOfBenchmarks.distanceKernel                ss   10  0,045 ±  0,007   s/op
-SetOfBenchmarks.distanceKernelSharedMemory    ss   10  0,051 ±  0,014   s/op
-SetOfBenchmarks.distancejava                  ss   10  0,005 ±  0,001   s/op
+Benchmark                                                  Mode  Cnt  Score   Error  Units
+SetOfBenchmarks.calculateGridDistanceJBLAS                   ss   10  0.904 ± 0.025   s/op
+SetOfBenchmarks.calculateGridDistanceKernel                  ss   10  0.918 ± 0.013   s/op
+SetOfBenchmarks.calculateGridDistanceKernelAllocationTime    ss   10  0.925 ± 0.016   s/op
+SetOfBenchmarks.distanceGridJava                             ss   10  0.906 ± 0.017   s/op

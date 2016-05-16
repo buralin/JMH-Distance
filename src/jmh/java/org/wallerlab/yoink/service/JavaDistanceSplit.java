@@ -12,7 +12,8 @@ public class JavaDistanceSplit implements IDistance
 		double [] comVector = {com.getX(),com.getY(), com.getZ()};
 		int atomIndex =0;
 		double dist = 0;
-		float [] distarray = new float [molecules.get(0).getAtoms().size()];
+		float [] distarray = new float [molecules.size()*10];
+		int counter=0;
 		for(int i = 0; i<molecules.size();i++)
 		{
 		    for(atomIndex=0; atomIndex < molecules.get(i).getAtoms().size();atomIndex ++)
@@ -22,7 +23,8 @@ public class JavaDistanceSplit implements IDistance
 		    	in1[1] = molecules.get(i).getAtoms().get(atomIndex).getY();
 		    	in1[2] = molecules.get(i).getAtoms().get(atomIndex).getZ();
 		        dist = javadist (in1, comVector);
-		        distarray [atomIndex] = (float)dist;
+		        distarray [counter] = (float)dist;
+		        counter++;
 		    } 
 		}
 		return distarray;

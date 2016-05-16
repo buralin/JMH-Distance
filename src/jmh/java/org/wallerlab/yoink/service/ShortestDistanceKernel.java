@@ -79,6 +79,7 @@ public class ShortestDistanceKernel implements ICalculateGridDistance {
         
        // Allocate the device input data, and copy the
        // host input data to the device
+       
        CUdeviceptr d_in1 = new CUdeviceptr();
        cuMemAlloc(d_in1, columns1 *rows* Sizeof.FLOAT);
        cuMemcpyHtoD(d_in1, Pointer.to(in1),columns1*rows * Sizeof.FLOAT);
@@ -89,6 +90,8 @@ public class ShortestDistanceKernel implements ICalculateGridDistance {
        
        CUdeviceptr d_out = new CUdeviceptr();
        cuMemAlloc(d_out, distances * Sizeof.FLOAT);
+       
+       
        
        // Set up the kernel parameters: A pointer to an array
        // of pointers which point to the actual values.
@@ -107,12 +110,11 @@ public class ShortestDistanceKernel implements ICalculateGridDistance {
            kernelParameters, null          // Kernel- and extra parameters
        );
        
-       
        // Allocate host output memory and copy the device output
        // to the host.
        float out [] = new float [distances];
-       cuMemcpyDtoH(Pointer.to(out), d_out, distances * Sizeof.FLOAT);
        
+       cuMemcpyDtoH(Pointer.to(out), d_out, distances * Sizeof.FLOAT);
        cuMemFree(d_in1);
        cuMemFree(d_in2);
        cuMemFree(d_out);
@@ -120,9 +122,9 @@ public class ShortestDistanceKernel implements ICalculateGridDistance {
 		
 	}
 	public float [] makingPoints (){
-		float[] a = new float [3000];
+		float[] a = new float [6000];
 		
-		 for (int i = 0; i<3000;i++)
+		 for (int i = 0; i<6000;i++)
 		  {
 			Random random = new Random();
 			a[i] = (float) (random.nextDouble()*10);
